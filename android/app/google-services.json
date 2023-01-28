@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "36040421073",
+    "project_id": "spinwheel-8ae26",
+    "storage_bucket": "spinwheel-8ae26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36040421073:android:5f5c2f69252fbad70d9ff0",
+        "android_client_info": {
+          "package_name": "com.example.spinwheel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36040421073-64ohbvf81cd0qb6tccp1s00pmv41np3u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6qrW12VCpTwMzbgw9eCZTN-_ZInH8swo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36040421073-64ohbvf81cd0qb6tccp1s00pmv41np3u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

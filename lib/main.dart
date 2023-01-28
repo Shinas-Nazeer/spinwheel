@@ -1,8 +1,12 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:spinwheel/screens/spin_screen.dart';
+import 'package:spinwheel/widgets/spin_widget.dart';
 
-void main() {
+void main() async {
   runApp(const MyApp());
+   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
 }
 
 class MyApp extends StatelessWidget {
