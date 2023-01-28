@@ -1,16 +1,3 @@
-# spinwheel
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![spinwheel](https://user-images.githubusercontent.com/109856293/215251712-4c37f894-6fb4-4efc-b154-3dccf50700c3.jpg)
+![22](https://user-images.githubusercontent.com/109856293/215251735-9c9d495b-dfaf-4dee-a137-057b67317a45.jpg)
