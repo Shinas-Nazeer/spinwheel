@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:spinwheel/constants/color.dart';
+import 'package:spinwheel/screens/spin_screen.dart';
 
 
 class SpinWidjet extends StatefulWidget {
@@ -60,48 +62,77 @@ class _SpinWidjetState extends State<SpinWidjet> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(   
-        children: [
-          SizedBox(
-            height: 400,
-            child: Stack(children: [
-              Positioned(
-                  child: Align(
-                alignment: Alignment.center,
-                child: Transform.rotate(
-                    angle: 3.14 / 180 * degree,
-                    child: InkWell(
-                        onTap: () {
-                          rotateWheel();
-                         
-                          print('rotated');
-                        },
+    return Scaffold(
+       appBar: AppBar(
+          title: ListTile(
+        textColor: kWhite,
+        iconColor: Colors.green,
+        title: Row(
+          children: const [
+            Text('SPIN TO WIN'),
+            Icon(
+              Icons.circle,
+              size: 14.0,
+            )
+          ],
+        ),
+        subtitle: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: const [
+            kSizedbox,
+            Text(
+              'Do you want 30% discount Spin here to get your discouts',
+              style: TextStyle(fontSize: 10),
+            ),
+            kSizedbox
+          ],
+        ),
+      )),
+      body: SingleChildScrollView(
+        child: Column(   
+            children: [
+              SizedBox(
+                height: 400,
+                child: Stack(children: [
+                  Positioned(
+                      child: Align(
+                    alignment: Alignment.center,
+                    child: Transform.rotate(
+                        angle: 3.14 / 180 * degree,
+                        child: InkWell(
+                            onTap: () {
+                              rotateWheel();
+                             
+                              print('rotated');
+                            },
+                            child: Image.asset(
+                              'images/pngwing.com.png',
+                              width: 350,
+                              height: 350,
+                            ))),
+                  )),
+                  Positioned(
+                      child: Align(
+                    alignment: Alignment.topCenter,
+                    child: Transform.rotate(
+                        angle: 9.4,
                         child: Image.asset(
-                          'images/pngwing.com.png',
-                          width: 350,
-                          height: 350,
-                        ))),
-              )),
-              Positioned(
-                  child: Align(
-                alignment: Alignment.topCenter,
-                child: Transform.rotate(
-                    angle: 9.4,
-                    child: Image.asset(
-                      'images/rout.png',
-                      width: 50,
-                      height: 50,
-                    )),
-              )),
-            ]),
+                          'images/rout.png',
+                          width: 50,
+                          height: 50,
+                        )),
+                  )),
+                ]),
+              ),
+              Text(
+                '$result%',
+                style: const TextStyle(color: Colors.blue, fontSize: 50),
+              ),
+             SpinScreen(discount: result,)
+            ],
           ),
-          Text(
-            '$result%',
-            style: const TextStyle(color: Colors.blue, fontSize: 50),
-          ),
-         
-        ],
-      );
+      ),
+    );
     
   }
 }

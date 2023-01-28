@@ -23,6 +23,6 @@ class MyApp extends StatelessWidget {
           appBarTheme: AppBarTheme(color: Colors.deepPurple[900]),
           // primarySwatch: Colors.deepPurple,
         ),
-        home: SpinScreen());
+        home: SpinWidjet());
   }
 }
